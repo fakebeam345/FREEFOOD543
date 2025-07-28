@@ -1,5 +1,5 @@
-<?php 
-  require '../connect.php';
+<?php
+  require '../conect.php';
   if(empty($_SESSION['username'])){
     header('location:../login.php');
   }
@@ -90,17 +90,18 @@
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
-      <?php include 'navbar.php';?>
+      <?php include 'navbar.php' ?>
       <!--end::Header-->
       <!--begin::Sidebar-->
-     <?php include 'sidebar.php';?>
+      <?php include 'sidebar.php' ?>
       <!--end::Sidebar-->
       <!--begin::App Main-->
       <main class="app-main">
-          </main>
+        <?php ?>
+      </main>
       <!--end::App Main-->
       <!--begin::Footer-->
-     <?php include 'footer.php';?>
+      <?php include 'footer.php' ?>
       <!--end::Footer-->
     </div>
     <!--end::App Wrapper-->
